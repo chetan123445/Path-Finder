@@ -1,0 +1,31 @@
+                        INPUT
+Enter number of rows for grid:7
+Enter number of columns for grid:6
+
+Enter the Grid(0-obstacle / 1-clear path):
+0 0 1 0 0 0
+0 1 1 0 1 0
+0 1 0 1 1 1
+0 1 1 1 0 1
+0 0 0 0 0 1
+0 0 0 1 1 1
+0 0 1 1 0 0
+
+The grid entered by you is as follows:
+|0||0||1||0||0||0|
+|0||1||1||0||1||0|
+|0||1||0||1||1||1|
+|0||1||1||1||0||1|
+|0||0||0||0||0||1|
+|0||0||0||1||1||1|
+|0||0||1||1||0||0|
+
+Enter the row for source node:0
+Enter the col for source node:2
+
+Enter the row for target node:6
+Enter the col for target node:2
+
+                        OUTPUT
+We have reached the target node using the following path(row,col):
+(0,2)->(1,2)->(2,1)->(3,2)->(3,3)->(2,4)->(3,5)->(4,5)->(5,4)->(5,3)->(6,2)
