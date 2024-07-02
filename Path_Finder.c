@@ -6,7 +6,6 @@
 
 struct queue
 {
-    float f_value;
     int row;
     int col;
     struct queue *link;
