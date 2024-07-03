@@ -302,7 +302,7 @@ void PathFinder(int no_rows,int no_cols,int grid[][no_cols],int srcrow,int srcco
                 }
             }
         }
-        if(i-1>=0 && j-1>=0 && (close_list[i-1][j]==1 && close_list[i][j-1]==0) || (close_list[i-1][j]==0 && close_list[i][j-1]==1) || (close_list[i-1][j]==1 && close_list[i][j-1]==1))// left->up diagonal cell
+        if(i-1>=0 && j-1>=0 && (grid[i-1][j]==1 && grid[i][j-1]==0) || (grid[i-1][j]==0 && grid[i][j-1]==1) || (grid[i-1][j]==1 && grid[i][j-1]==1))// left->up diagonal cell
          {
              if(i-1==tarrow && j-1==tarcol)
              {
@@ -331,7 +331,7 @@ void PathFinder(int no_rows,int no_cols,int grid[][no_cols],int srcrow,int srcco
                     }
              }
          }
-         if(i-1>=0 && j+1<no_cols && (close_list[i-1][j]==1 && close_list[i][j+1]==0) || (close_list[i-1][j]==0 && close_list[i][j+1]==1) || (close_list[i-1][j]==1 && close_list[i][j+1]==1))// right->up diagonal cell
+         if(i-1>=0 && j+1<no_cols && (grid[i-1][j]==1 && grid[i][j+1]==0) || (grid[i-1][j]==0 && grid[i][j+1]==1) || (grid[i-1][j]==1 && grid[i][j+1]==1))// right->up diagonal cell
          {
              if(i-1==tarrow && j+1==tarcol)
              {
@@ -360,7 +360,7 @@ void PathFinder(int no_rows,int no_cols,int grid[][no_cols],int srcrow,int srcco
                     }
              }
          }
-         if(i+1<no_rows && j-1>=0 && (close_list[i+1][j]==1 && close_list[i][j-1]==0) || (close_list[i+1][j]==0 && close_list[i][j-1]==1) || (close_list[i+1][j]==1 && close_list[i][j-1]==1))// left->down diagonal cell
+         if(i+1<no_rows && j-1>=0 && (grid[i+1][j]==1 && grid[i][j-1]==0) || (grid[i+1][j]==0 && grid[i][j-1]==1) || (grid[i+1][j]==1 && grid[i][j-1]==1))// left->down diagonal cell
          {
              if(i+1==tarrow && j-1==tarcol)
              {
@@ -389,7 +389,7 @@ void PathFinder(int no_rows,int no_cols,int grid[][no_cols],int srcrow,int srcco
                     }
              }
          }
-         if(i+1<no_rows && j+1<no_cols && (close_list[i+1][j]==1 && close_list[i][j+1]==0) || (close_list[i+1][j]==0 && close_list[i][j+1]==1) || (close_list[i+1][j]==1 && close_list[i][j+1]==1))// right->down diagonal cell
+         if(i+1<no_rows && j+1<no_cols && (grid[i+1][j]==1 && grid[i][j+1]==0) || (grid[i+1][j]==0 && grid[i][j+1]==1) || (grid[i+1][j]==1 && grid[i][j+1]==1))// right->down diagonal cell
          {
              if(i+1==tarrow && j+1==tarcol)
              {
