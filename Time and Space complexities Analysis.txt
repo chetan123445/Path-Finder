@@ -1,0 +1,48 @@
+-->Time Complexity Analysis:
+
+-->Initialization:
+   1: Initializing the close_list and info arrays takes O(rows×cols) time.
+
+-->Main Loop in PathFinder:
+   1: The main loop runs while the queue is not empty. In the worst case,  
+      every cell in the grid will be visited once. This loop runs up to      
+      (rows×cols) times.
+
+--> For each cell, the algorithm checks up to 8 possible neighbors (left, 
+    right, up, down, and 4 diagonals). Each check involves constant-time
+    operations, such as checking bounds, checking if a cell is blocked, and
+    updating the cell details.  
+  .
+-->Adding to Open Set:
+   Adding a node to the queue is an O(1) operation.
+
+-->Path Construction:
+   Constructing the path by traversing the parent pointers takes O(rows+cols) time, as the path 
+   length can be at most rows+cols.
+
+
+-->Combining these, the most significant part of the algorithm is the main loop, which results in a 
+   time complexity of: O(rows×cols)
+
+-->Space Complexity Analysis:
+  1:Grid, close_list and info Arrays:The grid, close_list, and info arrays 
+                                    each require O(rows×cols) space.
+   
+  2:Queue for Open Set:In the worst case, the queue can hold all cells of 
+                       the grid, resulting in O(rows×cols) space.
+
+ 3:Path Construction Stack:The stack used to store the path also requires  
+                           O(rows+cols) space in the worst case.
+
+--> Combining these, the overall space complexity is dominated by the storage requirements for 
+    the grid and associated arrays: O(rows×cols)
+
+--> SUMMARY:
+1: Time Complexity: O(rows×cols)
+2: Space Complexity: O(rows×cols)
+
+
+
+
+
+
