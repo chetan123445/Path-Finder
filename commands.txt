@@ -1,0 +1,5 @@
+cd "C:\Users\CHETAN DUDI\OneDrive\Desktop\Path_Finder\Path-Finder"
+
+g++ path_finder_gui.cpp -o path_finder.exe -Iinclude -Llib -lraylib -lopengl32 -lgdi32 -lwinmm -Wall -Wextra -std=c++17
+
+./path_finder.exe
