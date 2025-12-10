@@ -41,7 +41,7 @@ Follow these instructions to compile and run the application on your local machi
 2.  **Compile Command**: Open a terminal (like Git Bash or PowerShell) in the `Path-Finder` directory and run the following command:
 
     ```bash
-    g++ path_finder_gui.cpp -o path_finder.exe -Iinclude -Llib -lraylib -lopengl32 -lgdi32 -lwinmm -Wall -Wextra -std=c++17
+    ./build.bat
     ```
     This command compiles your C++ code, links it against the Raylib library, and creates an executable file named `path_finder.exe`.
 
@@ -51,6 +51,35 @@ After successful compilation, run the program from the same terminal:
 
 ```bash
 ./path_finder.exe
+```
+
+---
+
+## 📂 Project Structure
+
+```
+c:\Users\CHETAN DUDI\OneDrive\Desktop\Path_Finder\Path-Finder\
+├───build.bat
+├───commands.txt
+├───path_finder.exe
+├───README.md
+├───Test_Case.txt
+├───.git\
+├───.vscode\
+│   ├───c_cpp_properties.json
+│   ├───launch.json
+│   └───settings.json
+├───include\
+│   ├───raylib.h
+│   ├───raymath.h
+│   └───rlgl.h
+├───lib\
+│   ├───libraylib.a
+│   ├───libraylibdll.a
+│   └───raylib.dll
+└───src\
+    ├───path_finder_gui.cpp
+    └───Path_Finder.c
 ```
 
 ---
